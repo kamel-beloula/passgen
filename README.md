@@ -42,7 +42,7 @@ https://kamel-beloula.github.io/Console-Finances/
 
 
 ## Screenshot
-![Console log view from deplyed application](./images/console-log.png)
+![Console log view from deployed application](images/Password Generator.png)
 
 
 ## Credits
