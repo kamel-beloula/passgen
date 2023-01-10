@@ -90,7 +90,7 @@ var upperCasedCharacters = [
 
 var passwordLength = 0
 let generatedPassword = ""
-let finalPassword = ""
+let listOfCharacters = ""
 
 // Function to prompt user for password options
 function getPasswordOptions() {
@@ -102,7 +102,7 @@ function getPasswordOptions() {
 
   } while (passwordLength < 10 || passwordLength > 64 || passwordLength != parseInt(passwordLength));
 
-  finalPassword = ""
+  listOfCharacters = ""
 
   do {
 
@@ -112,25 +112,25 @@ function getPasswordOptions() {
     const specialChar = confirm("Would you like to include Special Characters in you password? ($@%&*, etc)")
 
     if (lowercase) {
-      finalPassword += lowerCasedCharacters.join("")
+      listOfCharacters += lowerCasedCharacters.join("")
     }
     if (uppercase) {
-      finalPassword += upperCasedCharacters.join("")
+      listOfCharacters += upperCasedCharacters.join("")
     }
     if (numeric) {
-      finalPassword += numericCharacters.join("")
+      listOfCharacters += numericCharacters.join("")
     }
     if (specialChar) {
-      finalPassword += specialCharacters.join("")
+      listOfCharacters += specialCharacters.join("")
     }
 
-    if (finalPassword === "") {
+    if (listOfCharacters === "") {
       if (!confirm('You need to choose at least one "Character Type" or click "Cancel" to exit')) {
         return
       }
     }
 
-  } while (finalPassword === "");
+  } while (listOfCharacters === "");
 }
 
 // Function for getting a random element from an array
