@@ -109,7 +109,7 @@ function getPasswordOptions() {
     const lowercase = confirm("Would you like to include Lowercase Characters in you password?")
     const uppercase = confirm("Would you like to include Uppercase Characters in you password?")
     const numeric = confirm("Would you like to include Numeric Characters in you password?")
-    const specialChar = confirm("Would you like to include Special Characters in you password? ($@%&*, etc)")
+    const specialChar = confirm("Would you like to include Special Characters in you password?")
 
     if (lowercase) {
       listOfCharacters += lowerCasedCharacters.join("");
@@ -148,9 +148,9 @@ function generatePassword() {
   }
 
   for (let i = 0; i < passwordLength; i++) {
-    generatedPassword += getRandom(listOfCharacters)
+    generatedPassword += getRandom(listOfCharacters);
   }
-  return generatedPassword
+  return generatedPassword;
 
 }
 
