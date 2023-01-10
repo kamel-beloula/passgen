@@ -90,6 +90,13 @@ var upperCasedCharacters = [
 
 // Function to prompt user for password options
 function getPasswordOptions() {
+  do {
+    passwordLength = prompt("Choose the length of your password between 10 and 64")
+    if (passwordLength < 10 || passwordLength > 64) {
+      alert("Please choose a number between 10 and 64")
+    }
+
+  } while (passwordLength < 10 || passwordLength > 64 || passwordLength != parseInt(passwordLength));
 
 }
 
