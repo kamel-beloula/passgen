@@ -3,7 +3,7 @@
 
 ## Description
 
-This application generates a random passoword based on the user's chosen criterias; length of the password and the types of characters included in the password.
+This application generates a random passoword based on the user's chosen criterias; length of the password and the types of characters to be included in the password.
 
 
 ## Table of Contents
@@ -21,13 +21,13 @@ This application generates a random passoword based on the user's chosen criteri
 
 In order to install this project, you must login to GitHub. Once there you will click on the green button that says clone or download. You will be given choices on how to download: using the ssh/html key or downloading the zip file.
 
-Using SSH/HTML Key: You will copy the link shown and open up either terminal (mac: pre-installed) or gitbash (pc: must be installed). Once the application is open, you will type git clone paste url here. Once you have cloned the htx-tacos repo, cd into the repo and type "open ." to open the folder which contains all files used for the website. You can also type "code ." to open the repo in VS code.
+Using SSH/HTML Key: You will copy the link shown and open up either terminal (mac: pre-installed) or gitbash (pc: must be installed). Once the application is open, you will type git clone paste url here. Once you have cloned the repo, cd into the repo and type "open ." to open the folder which contains all files used for the website. You can also type "code ." to open the repo in VS code.
 
 Using Download ZIP: Click on Download Zip. Locate the file and double click it to unzip the file. Locate the unzipped folder and and open it. All the files for the website will be within this folder.
 
 ## Usage
 
-Simply click on the live link listed below. Or open the index.html file on your browser.
+Open the index.html file in your browser,or simply click on the live link of the deployed application. 
 
 When the "generate password" button is clicked, the application presents a series of prompts for inputs and validations:
 
@@ -42,7 +42,7 @@ https://kamel-beloula.github.io/Console-Finances/
 
 
 ## Screenshot
-![Console log view from deployed application](images/Password Generator.png)
+![deployed application screenshot](./images/Password%20Generator.png)
 
 
 ## Credits
