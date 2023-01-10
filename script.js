@@ -88,9 +88,9 @@ var upperCasedCharacters = [
   'Z'
 ];
 
-var passwordLength = 0
-let generatedPassword = ""
-let listOfCharacters = ""
+var passwordLength = 0;
+let generatedPassword = "";
+let listOfCharacters = "";
 
 // Function to prompt user for password options
 function getPasswordOptions() {
@@ -102,7 +102,7 @@ function getPasswordOptions() {
 
   } while (passwordLength < 10 || passwordLength > 64 || passwordLength != parseInt(passwordLength));
 
-  listOfCharacters = ""
+  listOfCharacters = "";
 
   do {
 
@@ -112,21 +112,21 @@ function getPasswordOptions() {
     const specialChar = confirm("Would you like to include Special Characters in you password? ($@%&*, etc)")
 
     if (lowercase) {
-      listOfCharacters += lowerCasedCharacters.join("")
+      listOfCharacters += lowerCasedCharacters.join("");
     }
     if (uppercase) {
-      listOfCharacters += upperCasedCharacters.join("")
+      listOfCharacters += upperCasedCharacters.join("");
     }
     if (numeric) {
-      listOfCharacters += numericCharacters.join("")
+      listOfCharacters += numericCharacters.join("");
     }
     if (specialChar) {
-      listOfCharacters += specialCharacters.join("")
+      listOfCharacters += specialCharacters.join("");
     }
 
     if (listOfCharacters === "") {
       if (!confirm('You need to choose at least one "Character Type" or click "Cancel" to exit')) {
-        return
+        return;
       }
     }
 
@@ -140,6 +140,17 @@ function getRandom(arr) {
 
 // Function to generate password with user input
 function generatePassword() {
+  generatedPassword = "";
+  getPasswordOptions();
+
+  if (listOfCharacters === "") {
+    return "";
+  }
+
+  for (let i = 0; i < passwordLength; i++) {
+    generatedPassword += getRandom(listOfCharacters)
+  }
+  return generatedPassword
 
 }
 
