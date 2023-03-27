@@ -99,7 +99,9 @@ function getPasswordOptions() {
     if (passwordLength < 10 || passwordLength > 64) {
       alert("Please choose a number between 10 and 64")
     }
-
+    if (!passwordLength){
+      return;
+    }
   } while (passwordLength < 10 || passwordLength > 64 || passwordLength != parseInt(passwordLength));
 
   listOfCharacters = "";

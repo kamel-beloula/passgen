@@ -38,7 +38,7 @@ When the "generate password" button is clicked, the application presents a serie
 Once all prompts are answered, the password is generated.
 
 ## Deployed application
-https://kamel-beloula.github.io/Console-Finances/
+https://kamel-beloula.github.io/passgen/
 
 
 ## Screenshot
